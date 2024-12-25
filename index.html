@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fronti - Transform UI Designs Into Code</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #2c3e50, #34495e); /* Gradient background */
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: auto;
+      font-size: 16px;
+      overflow-y: scroll; /* Enables scrolling */
+      text-align: center;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Stronger shadow for visibility */
+    }
+    .tagline {
+      font-size: 1.5rem;
+      color: #ecf0f1;
+      font-weight: 300;
+      margin-bottom: 40px;
+      line-height: 1.6;
+      text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); /* Stronger shadow for visibility */
+    }
+    .start-button, .demo-button {
+      background-color: #9b59b6; /* Royal Purple */
+      border: none;
+      padding: 20px 40px;
+      font-size: 1.4rem;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+    .start-button:hover, .demo-button:hover {
+      background-color: #8e44ad;
+    }
+    .hero-image {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.7);
+      margin-top: 40px;
+    }
+    .container {
+      text-align: center;
+      z-index: 1;
+    }
+    .underline {
+      width: 80px;
+      height: 4px;
+      background-color: #9b59b6;
+      margin: 30px auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .animated-text {
+      font-size: 1.2rem;
+      margin-top: 30px;
+      color: #ecf0f1;
+      font-weight: 300;
+    }
+
+    /* Styling for the scrolling images */
+    .scrolling-image-container {
+      width: 100%;
+      overflow: hidden;
+      margin-top: 50px;
+    }
+    .scrolling-image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Fronti</h1>
+    <p class="tagline">Revolutionizing the way you convert your UI designs into production-ready code.</p>
+    <button class="start-button" onclick="window.location.href='http://192.168.48.146:5000'">Get Started</button>
+    <button class="demo-button" onclick="window.location.href='https://youtu.be/A4Nn_chg7hA'">See Demo Video</button>
+    <div class="underline"></div>
+
+    <!-- FrontEye demo image -->
+    <img src="Demo.png" alt="FrontEye Demo" class="hero-image">
+  </div>
+
+  <!-- Scrolling image (appears as user scrolls down) -->
+  <div class="scrolling-image-container">
+    <img src="demo2.png" alt="FrontEye Demo 2" class="scrolling-image">
+  </div>
+
+  <!-- Scrolling image 3 (appears as user scrolls down) -->
+  <div class="scrolling-image-container">
+    <img src="demo3.png" alt="FrontEye Demo 3" class="scrolling-image">
+  </div>
+
+</body>
+</html>
